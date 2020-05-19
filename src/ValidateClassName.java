@@ -2,7 +2,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidateClassName {
-    private static final String CLASS_NAME_REGEX = "^[APC][0-9][0-9][0-9][0-9][GHIKLM]$";
+    private static final String CLASS_NAME_REGEX = "^[APC][0-9]{4}[GHIKLM]$";
 
     public static boolean validate(String regex) {
         Pattern pattern = Pattern.compile(CLASS_NAME_REGEX);
